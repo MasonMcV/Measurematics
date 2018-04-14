@@ -38,8 +38,6 @@ public class Orientation implements SensorEventListener {
         void onOrientationChanged(float pitch, float roll);
     }
     
-    private static final int SENSOR_DELAY_MICROS = 16 * 1000; // 16ms
-    
     private final WindowManager mWindowManager;
     
     private final SensorManager mSensorManager;
@@ -49,6 +47,8 @@ public class Orientation implements SensorEventListener {
     
     private int mLastAccuracy;
     private Listener mListener;
+    
+    private float _roll;
     
     public Orientation(Activity activity) {
         mWindowManager = activity.getWindow().getWindowManager();
@@ -67,7 +67,7 @@ public class Orientation implements SensorEventListener {
             //LogUtil.w("Rotation vector sensor not available; will not provide orientation data.");
             return;
         }
-        mSensorManager.registerListener(this, mRotationSensor, SensorManager.SENSOR_DELAY_FASTEST);
+        mSensorManager.registerListener(this, mRotationSensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
     
     public void stopListening() {
@@ -136,7 +136,13 @@ public class Orientation implements SensorEventListener {
         // Convert radians to degrees
         float pitch = orientation[1] * -57;
         float roll = orientation[2] * -57;
+        _roll = roll;
         
         mListener.onOrientationChanged(pitch, roll);
+    }
+    
+    public float getRoll()
+    {
+        return _roll;
     }
 }
