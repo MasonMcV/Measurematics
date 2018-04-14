@@ -1,5 +1,6 @@
 package com.msquared.physicskinematics;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,19 +9,16 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements Orientation.Listener
 {
-    
-    
-    
     private Orientation mOrientation;
     
-    
+
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     
@@ -65,5 +63,9 @@ public class MainActivity extends AppCompatActivity implements Orientation.Liste
         TextView text = (TextView) findViewById(R.id.gameRotation);
         Log.d("Data",("New Data:"+ pitch + " " + roll));
         text.setText(String.format(Locale.ENGLISH,"New Data: \n%f\n%f", pitch,roll));
+    }
+    public void onButtonClick(View view){
+    Intent myIntent = new Intent(this, GatheringData.class);
+    startActivity(myIntent);
     }
 }

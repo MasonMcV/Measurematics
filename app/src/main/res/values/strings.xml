@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">PhysicsKinematics</string>
+    <string name="app_name">Physics Kinematics</string>
+
+    <string name="unit_prompt">units</string>
+
+    <string name="home_instructions">Enter distance from object and select the\ncorrect units</string>
+
+    <string-array name="unit_array">
+        <item>m</item>
+        <item>yd</item>
+        <item>ft</item>
+        <item>in</item>
+    </string-array>
+
+    <string name="dataMeasure_instructions">How to record measurements:\n1.Look down phone pointed at object
+    \n2.Tap button once\n3.Look up phone and tap button\n  when object is at max point</string>
 </resources>
