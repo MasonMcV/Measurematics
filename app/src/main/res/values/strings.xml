@@ -3,10 +3,12 @@
 
     <string name="unit_prompt">units</string>
 
+    <string name="home_instructions">Enter distance from object and select the\ncorrect units</string>
+
     <string-array name="unit_array">
         <item>m</item>
+        <item>yd</item>
         <item>ft</item>
         <item>in</item>
-        <item>yd</item>
     </string-array>
 </resources>
