@@ -26,6 +26,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="50dp"
         android:background="#86deff"
+        android:onClick="onBigButtonChanged"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
