@@ -13,5 +13,5 @@
     </string-array>
 
     <string name="dataMeasure_instructions">How to record measurements:\n1.Look down phone pointed at object
-    \n2.Tap screen once\n3.Look up phone and tap screen\n  when object is at max point</string>
+    \n2.Tap button once\n3.Look up phone and tap button\n  when object is at max point</string>
 </resources>
