@@ -14,6 +14,7 @@
         android:layout_marginEnd="80dp"
         android:layout_marginStart="80dp"
         android:background="@android:color/holo_green_light"
+        android:onClick="onButtonClick"
         android:text="START"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         app:layout_constraintBottom_toBottomOf="parent"
