@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">PhysicsKinematics</string>
+    <string name="app_name">Physics Kinematics</string>
+
+    <string name="unit_prompt">units</string>
+
+    <string-array name="unit_array">
+        <item>m</item>
+        <item>ft</item>
+        <item>in</item>
+        <item>yd</item>
+    </string-array>
 </resources>
