@@ -12,6 +12,16 @@
         <item>in</item>
     </string-array>
 
-    <string name="dataMeasure_instructions">How to record measurements:\n1.Look down phone pointed at object
-    \n2.Tap button once\n3.Look up phone and tap button\n  when object is at max point</string>
+    <string name="introduction">Welcome to (Good App Name)</string>
+    <string name="intro_part2">This app allows you to determine the height of any object by using your
+        distance from object and the angles recorded when you point your phone at the starting and ending points of
+        the object or its trajectory.
+        </string>
+
+    <string name="dataMeasure_instructions">How to record measurements:\n1.Point the long side of your phone
+        at the bottom of the object\n2.Tap the square once\n3.Point phone at top of object and tap again</string>
+
+    <string name="recalculate">Calculate again using same distance</string>
+    <string name="return_home">Return to home and calculate using a new distance</string>
+    <string name="results_text">Results:</string>
 </resources>
