@@ -32,7 +32,7 @@ public class GatheringData extends AppCompatActivity implements Orientation.List
         _string = b.getString("string");
         _distance = array[0];
         TextView distanceTextView = findViewById(R.id.textView4);
-        distanceTextView.setText("Distance: " + _distance);
+        distanceTextView.setText("Distance: " + _distance + " " + _string);
     }
     
     @Override

@@ -18,8 +18,8 @@
         the object or its trajectory.
         </string>
 
-    <string name="dataMeasure_instructions">How to record measurements:\n1.Look down phone pointed at object
-    \n2.Tap button once\n3.Look up phone and tap button\n  when object is at max point</string>
+    <string name="dataMeasure_instructions">How to record measurements:\n1.Point the long side of your phone
+        at the bottom of the object\n2.Tap the square once\n3.Point phone at top of object and tap again</string>
 
     <string name="recalculate">Calculate again using same distance</string>
     <string name="return_home">Return to home and calculate using a new distance</string>

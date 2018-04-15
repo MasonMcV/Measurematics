@@ -19,8 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GatheringData"></activity>
-        <activity android:name=".Results"></activity>
+        <activity android:name=".GatheringData"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Results"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

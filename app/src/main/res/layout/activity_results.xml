@@ -120,7 +120,7 @@
                     android:layout_marginStart="60dp"
                     android:layout_marginTop="0dp"
                     android:layout_weight=".25"
-                    android:background="@android:color/holo_orange_light"
+                    android:background="#5dccff"
                     android:onClick="onButtonRecalculate"
                     android:text="@string/recalculate" />
             </TableRow>
@@ -139,7 +139,7 @@
                     android:layout_marginStart="60dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight=".25"
-                    android:background="@android:color/holo_orange_light"
+                    android:background="#5dccff"
                     android:onClick="onButtonReturnHome"
                     android:text="@string/return_home" />
             </TableRow>

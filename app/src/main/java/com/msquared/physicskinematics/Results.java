@@ -105,7 +105,7 @@ public class Results extends AppCompatActivity {
     
         // Line
         Paint paint = new Paint();
-        paint.setColor(Color.GREEN);
+        paint.setColor(Color.BLACK);
         paint.setStrokeWidth(5);
         canvas.drawLine(point1.x, point1.y, point2.x, point2.y, paint);
         canvas.drawLine(point2.x, point2.y, point3.x, point3.y, paint);
