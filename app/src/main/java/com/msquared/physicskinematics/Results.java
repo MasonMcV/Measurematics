@@ -10,6 +10,7 @@ import android.graphics.Path;
 import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.widget.ImageView;
@@ -71,8 +72,35 @@ public class Results extends AppCompatActivity {
     
     private double getHeight(double theta1, double theta2)
     {
-        double height1 = tan(toRadians(abs(90-abs(theta1))))*_distance;
-        double height2 = tan(toRadians(abs(90-abs(theta2))))*_distance;
+        theta1 = abs(theta1);
+        theta2 = abs(theta2);
+        double height1 = 0;
+        double height2 = 0;
+        Log.d("Data", "Thetas: "+theta1 + " " + theta2);
+        if(theta1==0 || theta1 == 180 || theta2 == 0 || theta2 == 180)
+            return 000.0;
+        if(theta1 > 90)
+        {
+            height1 = tan(toRadians(theta1 - 90));
+        }
+        if(theta1 <= 90)
+        {
+            height1 = tan(toRadians(90 - theta1));
+        }
+        if(theta2 > 90)
+        {
+            height2 = tan(toRadians(theta2 - 90));
+        }
+        if(theta2 <= 90)
+        {
+            height2 = tan(toRadians(90 - theta2));
+        }
+        Log.d("Data", "Thetas: "+theta1 + " " + theta2);
+        Log.d("Data", "Heights: "+height1 + " " + height2);
+        
+        height1 *= _distance;
+        height2 *= _distance;
+        Log.d("Data", "Heights: "+height1 + " " + height2);
         return height1 + height2;
     }
     
