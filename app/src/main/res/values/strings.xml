@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Physics Kinematics</string>
+    <string name="app_name">Measurematics</string>
 
     <string name="unit_prompt">units</string>
 
@@ -12,7 +12,7 @@
         <item>in</item>
     </string-array>
 
-    <string name="introduction">Welcome to (Good App Name)</string>
+    <string name="introduction">Welcome to Measurematics</string>
     <string name="intro_part2">This app allows you to determine the height of any object by using your
         distance from object and the angles recorded when you point your phone at the starting and ending points of
         the object or its trajectory.
