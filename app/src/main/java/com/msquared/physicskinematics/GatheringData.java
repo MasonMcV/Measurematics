@@ -17,6 +17,7 @@ public class GatheringData extends AppCompatActivity implements Orientation.List
     private Orientation mOrientation;
     float[] dataMaxMin = {0,0};
     double _distance;
+    String _string;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class GatheringData extends AppCompatActivity implements Orientation.List
         Intent intent = getIntent();
         Bundle b = this.getIntent().getExtras();
         double[] array = b.getDoubleArray("key");
+        _string = b.getString("string");
         _distance = array[0];
         TextView distanceTextView = findViewById(R.id.textView4);
         distanceTextView.setText("Distance: " + _distance);
@@ -55,15 +57,16 @@ public class GatheringData extends AppCompatActivity implements Orientation.List
         if(dataMaxMin[0] == 0)
         {
             dataMaxMin[0] = mOrientation.getRoll();
-            Log.d("Data","Data = " + dataMaxMin[0] + dataMaxMin[1]);
+            Log.d("Data","Data = " + dataMaxMin[0] + " " + dataMaxMin[1]);
             return;
         }
         dataMaxMin[1] = mOrientation.getRoll();
-        Log.d("Data","Data = " + dataMaxMin[0] + dataMaxMin[1]);
+        Log.d("Data","Data = " + dataMaxMin[0] + " " + dataMaxMin[1]);
 
         Intent myIntent2 = new Intent(this, Results.class);
         Bundle c = new Bundle();
         c.putDoubleArray("key", new double[]{_distance, dataMaxMin[0], dataMaxMin[1]});
+        c.putString("string", _string);
         myIntent2.putExtras(c);
         startActivity(myIntent2);
         // TODO: Add the stuff that makes it go to the text activity and pass the dataMaxMin variable

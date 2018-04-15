@@ -15,6 +15,7 @@
     <string name="dataMeasure_instructions">How to record measurements:\n1.Look down phone pointed at object
     \n2.Tap button once\n3.Look up phone and tap button\n  when object is at max point</string>
 
-    <string name="recalculate">Press button to calculate again\nusing same distance</string>
-    <string name="return_home">Press button to return to home\nand calculate using a new distance</string>
+    <string name="recalculate">Calculate again using same distance</string>
+    <string name="return_home">Return to home and calculate using a new distance</string>
+    <string name="results_text">Results:</string>
 </resources>
