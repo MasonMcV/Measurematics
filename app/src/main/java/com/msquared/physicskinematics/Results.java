@@ -101,6 +101,9 @@ public class Results extends AppCompatActivity {
         height1 *= _distance;
         height2 *= _distance;
         Log.d("Data", "Heights: "+height1 + " " + height2);
+        
+        if((theta1 > 90 && theta2 > 90) || (theta1 < 90 && theta2 < 90))
+            return abs(height2 - height1);
         return height1 + height2;
     }
     
